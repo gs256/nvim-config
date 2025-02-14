@@ -46,7 +46,8 @@ vim.g.maplocalleader = "\\"
 
 require("lazy").setup({
   spec = {
-    { "navarasu/onedark.nvim", lazy = false, priority = 1000 }
+    { "navarasu/onedark.nvim", lazy = false, priority = 1000 },
+    { 'numToStr/Comment.nvim' },
   },
   install = { colorscheme = { "onedark" } },
   checker = { enabled = true },
@@ -57,4 +58,13 @@ require("lazy").setup({
 
 require("onedark").setup({ style = "darker" })
 require("onedark").load()
+
+require("Comment").setup({
+  toggler = {
+      line = "<C-_>",
+  },
+  opleader = {
+      line = "<C-_>",
+  },
+})
 
