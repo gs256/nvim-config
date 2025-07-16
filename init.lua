@@ -9,6 +9,9 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 
+-- ignore case when searching
+vim.opt.ignorecase = true
+
 vim.g.mapleader = " "
 
 
