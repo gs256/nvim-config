@@ -26,6 +26,9 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz', { noremap = true, silent = true })
 vim.keymap.set('n', 'n', 'nzzzv', { noremap = true, silent = true })
 vim.keymap.set('n', 'N', 'Nzzzv', { noremap = true, silent = true })
 
+-- replace currently selected text with default register without yanking it
+vim.keymap.set("v", "p", '"_dP', { noremap = true, silent = true })
+
 
 -- Bootstrap and setup lazy.nvim
 
